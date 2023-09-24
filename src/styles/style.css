@@ -1,0 +1,239 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Carter+One&family=Dangrek&family=Delius+Unicase:wght@400;700&family=Inter:wght@500;800&family=Julius+Sans+One&family=Nunito+Sans&family=Roboto+Condensed:wght@700&family=Roboto:wght@500&family=Space+Grotesk:wght@500&family=Rubik+Mono+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Space Grotesk', sans-serif;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+}
+.card-container{
+    width:35%;
+    min-height:100vh;
+    background-image:url(../images/main.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.cards{
+    position: absolute;
+    top:50%;
+    display: flex;
+    flex-direction: column;
+    gap:2rem;
+    left:100%;
+    transform: translate(-50%,-50%);
+
+}
+.face_card{
+    position: relative;
+    transform: translateX(-100px);
+    margin-top:100px;
+}
+
+.cvc{
+    color: #FFFFFF;
+    font-size: 1rem;
+    letter-spacing: 0.065em;
+    display: flex;
+    align-items: center;
+    bottom: 140px;
+    position: relative;
+    left: 360px;
+   
+    
+
+}
+.carddetails{    
+    position:absolute;
+    bottom:100px;
+    left:30px;
+
+
+
+
+    
+   
+}
+.carddetails img {
+    position: absolute;
+    bottom: 86px;
+    left: 0px;
+   
+  }
+.cardnumber{
+    display:block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing:5px;
+    color:#FFFFFF;
+    
+    
+}
+.error{
+    color:red;
+
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap:12rem;
+    color:white;
+    font-size: 1rem;
+    letter-spacing: 0.065em;
+    text-transform: uppercase;
+    position:relative;
+    bottom:55px;
+    left:30px;
+    
+
+}
+/* .form-conatiner{
+  min-height:100vh;
+  width:60%;
+  position:absolute;
+  top:40%;
+  left:50%;
+
+} */
+.form-container{
+    position:absolute;
+  top:25%;
+  left:60%;
+}
+.form-container form{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    width:350px;
+    
+}
+.form-container input{
+    font-family: "Space Grotesk", sans-serif;
+    padding:0 1.6rem;
+    font-size:16px;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    border:1px solid hsl(270, 3%, 87%);
+    border-radius: 6px;
+    width:100%;
+    height:3rem;
+    outline: none;
+    color: hsl(278, 68%, 11%);
+
+}
+.form-container input:focus{
+    border:1px solid;
+    border-color:linear-gradient(
+        90deg,
+        hsl(249, 99%, 64%) 0%,
+        hsl(278, 94%, 30%) 100%) !important;
+}
+.exp_date{
+    width:165px;
+    position: relative;
+    left:0%;
+    
+    justify-content: space-between;
+    
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.exp_date input{
+     width:80px;
+     gap:2px;
+}
+._cvc{
+    width:165px;
+}
+/* .exp_date input{
+    padding:0 1.6rem;
+    width:60px;
+    gap:0.2rem;
+    
+}
+._cvc input{
+    width:70px;
+    padding:.5rem;
+
+} */
+
+.two{
+    display: flex;
+    flex-direction: row;
+    width:350px;
+    justify-content: space-between;
+}
+.form-container label{
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 16px;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    color:hsl(278, 68%, 11%);
+    margin-bottom:2px;
+    text-align: left;
+    float:left;
+    
+    
+}
+
+.btn{
+    display:block;
+    margin-top:2.8rem;
+    border:0;
+    background:#220930;
+    color:white;
+    width:100%;
+    height:3rem;
+    border-radius: 6px;
+    font-family: Inter;
+    letter-spacing: 1px;
+    font-size:16px;
+    line-height: 19.36px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn:hover{
+    background: hsla(278,68%,11%,80%);
+}
+.confirmation{
+    display:flex;
+    flex-direction: column;
+    position: absolute;
+    top:30%;
+    left:65%;
+
+}
+.confirmation img{
+    width:100px;
+    height:100px;
+    margin-bottom: 2rem;
+    margin-left: 100px;
+}
+.confirmation h2{
+    font-size: 2.8rem;
+    font-weight: 500;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    color:hsl(278, 68%, 11%);
+}
+.confirmation p{
+   color:hsl(279, 6%, 55%);
+   margin-bottom: 1rem;
+}
